@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+        form{
+            background : linear-gradient(to left,#e7dfdf,#e7dfdf);
+            padding: 25px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0% ;
+
+        }
+
+       input{
+        border-color: #535f67; 
+        border-radius: 1px;
+       }
+        fieldset {
+            border: none;
+            background-color: rgba(0, 0, 0, 0.05);/*translucent*/
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body> 
+    <h1> STUDENT REGISTRATION FORM</h1>
+    <form>
+    <fieldset>
+       <legend> <b>Student details</b> </legend>
+        <label for="fname"> First Name : </label> 
+        <input type="text" name="fname" id="" required> 
+        <label for="mname"> Middle Name : </label>
+        <input type="text" name="mname" id=""> 
+        <label for="sname"> Surname :</label>
+        <input type="text" name="sname" id="" required> <br><br>
+        <label for="enroll"> Enrollment Date :</label>
+        <input type="date" name="enroll" id="" required> <br><br>
+        <label for="dob"> Date of Birth :</label>
+        <input type="date" name="dob" id="" required> <br><br>
+        <label> Gender :</label>
+        <input type="radio" name="gender" id="">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="">
+        <label for="female">Female</label>             
+        <input type="radio" name="gender" id="">
+        <label for="none">Rather not say</label><br><br>
+        <label for="residence">Home Village</label>
+        <input type="text" name="residence" id="" required>  <br><br>
+        <label for="specialneeds"> Special Needs :</label><br>
+        <textarea name="specialneeds" id="" placeholder="if any" rows="3" cols="40" style="border-color: #66c2ff; border-radius: 12px;"></textarea>
+    </fieldset>
+    <fieldset>
+       <legend> <b>Parents Details</b> </legend>
+        <label for="pfname"> First Name : </label> 
+        <input type="text" name="pfname" id="" required> <br><br>
+        
+        <label for="psname"> Surname :</label>
+        <input type="text" name="psname" id="" required> <br><br>
+        <label> Relationship with the child :</label>
+        <input type="radio" name="relationship" id="">
+        <label for="father">Father</label>
+        <input type="radio" name="relationship" id="">
+        <label for="mother">Mother</label> 
+        <input type="radio" name="relationship" id="">
+        <label for="relative">Relative </label>  <br><br>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id=""  required> 
+        <label for="phone">phone number :</label>
+        <input type="tel" name="phone" id=""  required>
+
+
+    </fieldset><br>
+     <input type="submit" name="Registration" id="" style="border-radius: 10px;" value="REGISTER">
+     <input type="reset" style="border-radius: 10px;"value="CLEAR">
+  </form>
+</body>
+</html>
+
+
+   
+
+    
