@@ -1,48 +1,86 @@
-body{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+body {
     margin: 0;
-    top: 0;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
-
-a.header_items{
-    color: rgba(245, 245, 245, 0.904);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    text-align: left;
-    margin: 0;
-    padding: 10px;
-    font-weight: bold;
-}
-
+/* HEADER */
 .header {
-    box-sizing: border-box;
-    background: #173459;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37 );
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #ebe8e8;
-    padding: 15px;
-    text-align: right;
-    margin-top: 0;
-    margin-left: 0;
     display: flex;
-    gap: 35%;
+    justify-content: space-between; /* pushes title right */
+    align-items: center;
+    background: #173459;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap; /* allows stacking on small screens */
 }
 
-
-.one {
-    margin-top: 20px;
+/* TITLE */
+.app_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
 }
 
+/* BUTTON CONTAINER (LEFT SIDE) */
 .two {
-    margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
 
-.header_items:hover {
-    color: whitesmoke;
-    font-size: 20px;
+/* BUTTON STYLE */
+.header_btn {
+    background-color: rgb(5, 71, 126);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.header_btn:hover {
+    background-color: #063d85;
+}
+
+/* REMOVE OLD STYLES THAT BREAK FLEX */
+.two {
+    float: none;
+}
+.header {
+    text-align: left;
+}
+
+/* 📱 RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .two {
+        margin-top: 10px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .app_title {
+        font-size: 20px;
+    }
+
+    .header_btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .two {
+        flex-direction: column; /* stack buttons */
+        width: 100%;
+    }
+
+    .header_btn {
+        width: 100%; /* full width buttons */
+    }
 }

@@ -8,16 +8,17 @@
 </head>
 <body>
 
-            <div class="header">
-                    <div class="one">
-                        <p class="app_title">ZENITH ACADEMY</p>
-                    </div>
+<div class="header">
+    <div class="one">
+        <p class="app_title">ZENITH ACADEMY</p>
+    </div>
 
-                    <div class="two">
-                        <a href="index.php" class="header_items">Home</a> &nbsp;
-                        <a href="index.php" class="header_items">Home</a> &nbsp;
-                        <a href="index.php" class="header_items">Home</a> &nbsp;
-                    </div>
-            </div>
+    <div class="two">
+        <a href="index.php"><button class="header_btn">Home</button></a>
+        <a href="index.php"><button class="header_btn">Log-in</button></a>
+        <a href="index.php"><button class="header_btn">Sign-up</button></a>
+    </div>
+</div>
+
 </body>
 </html>
