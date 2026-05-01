@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Headmaster Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+    h1 { color: #333; }
+    h2 { color: #444; margin-top: 30px; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    li { margin: 8px 0; }
+    .box {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Headmaster Dashboard</h1>
+  <h2>Welcome back</h2>
+  <p>This is your control center to manage the entire school.</p>
+
+  <hr>
+
+  <!-- Summary Section -->
+  <div class="box">
+    <h2>School Overview</h2>
+    <p><strong>Total Students:</strong> 1,248</p>
+    <p><strong>Total Teachers:</strong> 68</p>
+    <p><strong>Today's Attendance:</strong> 94%</p>
+    <p><strong>Average Grade:</strong> 72.5</p>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="box">
+    <h2>Quick Actions</h2>
+    <button onclick="alert('Opening Student Registration...')">Register New Student</button>
+    <button onclick="alert('Opening Teacher Assignment...')">Assign Teacher to Class</button>
+    <button onclick="alert('Opening Reports...')">Generate Report</button>
+    <button onclick="alert('Opening Announcement...')">Send Announcement</button>
+  </div>
+
+  <!-- Main Features -->
+  <div class="box">
+    <h2>Student Management</h2>
+    <ul>
+      <li>List of all students from all classes</li>
+      <li>List of grades of all students</li>
+      <li>Student registration</li>
+      <li>Suspending and expelling students</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Teacher Management</h2>
+    <ul>
+      <li>List of all teachers</li>
+      <li>Teacher registration</li>
+      <li>Assign teachers to classes</li>
+      <li>Removing teachers</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Other Important Features</h2>
+    <ul>
+      <li>View school-wide reports and analytics</li>
+      <li>Manage school calendar and timetable</li>
+      <li>Send messages to students, teachers, or parents</li>
+      <li>School settings and permissions</li>
+    </ul>
+  </div>
+
+</body>
+</html>
